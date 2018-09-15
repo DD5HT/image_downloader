@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/DD5HT/image_downloader.svg?branch=master)](https://travis-ci.org/DD5HT/image_downloader)
 ### How I would normally solve this problem:
 
 This solution is super fast, handles errors and malformated entries without a problem and ignores duplicates.
