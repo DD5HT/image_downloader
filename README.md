@@ -19,6 +19,9 @@ Usage:   `$ ./image_downloader.py samplefile.txt`
 
 Testing: `$ pytest `
 
+For manual testing a testserver can be used like this:
+`$ python3 -m http.server 60451 --bind 127.0.0.1`
+
 ### Comments
 
 This type of program can easily be parallelized by splitting the input file into multiple smaller files

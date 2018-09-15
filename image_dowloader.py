@@ -38,12 +38,14 @@ def download_file(url):
 
 def save_file(file_name, data):
     """Saves the data under the given file name"""
-    try:
-        with open(file_name, "wb") as out_file:
-            out_file.write(data)
-    except:
-        print("Cant write file to filesystem!")
-
+    if not os.path.isfile(file_name): #Check if file already exists
+        try:
+            with open(file_name, "wb") as out_file:
+                out_file.write(data)
+        except:
+            print("Cant write file to filesystem!")
+    else:
+        print("File already exists...skipping")
 
 def get_file_name(url):
     """Return the file name for the given url: eg. example.com/sample.jpg => sample.jpg"""
