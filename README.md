@@ -11,9 +11,9 @@ while read p; do
 done <$file
 ```
 
-Usage: `$ download.sh samplefile.txt`
+Usage: `$ ./download.sh samplefile.txt`
 
-### Now the python3 program
+### Now the python3.6 program
 
 Usage:   `$ ./image_downloader.py samplefile.txt`
 
